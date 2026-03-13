@@ -138,7 +138,7 @@ python -m http.server 8000
 
 ## 📬 Contact
 
-- **Phone:** 071 5643879
+- **Phone:** 071-5643879
 - **Email:** moodify@gmail.com
 - **Social:** WhatsApp · Facebook · Instagram
 
