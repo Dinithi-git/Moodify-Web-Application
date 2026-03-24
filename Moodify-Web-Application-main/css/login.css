@@ -1,0 +1,471 @@
+/* ═══════════════════════════════════════
+   BASE RESET & BODY
+═══════════════════════════════════════ */
+/* ─── Navbar Responsive ─── */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* ═══════════════════════════════════════
+   CUSTOM FONTS
+═══════════════════════════════════════ */
+@font-face {
+    font-family: 'Inria Sans';
+    src: url('../Fonts/InriaSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inria Serif';
+    src: url('../Fonts/InriaSerif-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ═══════════════════════════════════════
+   PAGE TITLE
+═══════════════════════════════════════ */
+.Page_Title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+    width: 689px;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #140b0b;
+    text-align: center;
+}
+
+/* ═══════════════════════════════════════
+   FORM CONTAINER
+═══════════════════════════════════════ */
+.form_Container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 150px;
+    width: 800px;
+}
+
+/* ═══════════════════════════════════════
+   TAB HEADERS
+═══════════════════════════════════════ */
+.tab-headers {
+    display: flex;
+    height: 50px;
+}
+
+/* ─── Log In Tab Button ─── */
+#login-tab {
+    flex: 1;
+    font-family: 'Inria Serif', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+    background-color: #5C1677;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-top-left-radius: 40px;
+}
+
+#login-tab:hover {
+    background-color: #3d3343;
+}
+
+/* ─── Sign Up Tab Button ─── */
+#signup-tab {
+    flex: 1;
+    font-family: 'Inria Serif', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+    background-color: #c280dd;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-top-right-radius: 40px;
+}
+
+#signup-tab:hover {
+    background-color: #9a50bb;
+}
+
+/* ═══════════════════════════════════════
+   FORM CONTENT BOX
+═══════════════════════════════════════ */
+.form-content {
+    position: relative;
+    height: 380px;
+    overflow: hidden;
+    background: url('../Images/Login_page_Background.jpg') center/cover no-repeat;
+    background-color: #f0e5f5;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: 3px solid #5c1677;
+    transition: height 0.3s ease;
+}
+
+/* ═══════════════════════════════════════
+   LOGIN FORM
+═══════════════════════════════════════ */
+#login-form {
+    display: block;
+}
+
+/* ─── Login Labels ─── */
+#login-form #username-label {
+    position: absolute;
+    top: 110px;
+    left: 160px;
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: black;
+    background-color: rgba(92, 22, 119, 0.6);
+    padding: 6px 12px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+#login-form #password-label {
+    position: absolute;
+    top: 160px;
+    left: 160px;
+    width: 204px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: black;
+    background-color: rgba(92, 22, 119, 0.6);
+    padding: 6px 12px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* ─── Login Inputs ─── */
+#login-form #username {
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin-top: 111px;
+    margin-left: 400px;
+    padding: 7px 15px;
+    font-size: 16px;
+    font-family: 'Inria Sans', sans-serif;
+    border: 2px solid #5c1677;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#login-form #password {
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin-top: 12px;
+    margin-left: 400px;
+    padding: 7px 15px;
+    font-size: 16px;
+    font-family: 'Inria Sans', sans-serif;
+    border: 2px solid #5c1677;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* ─── Login Submit Button ─── */
+#login-form .login-btn {
+    display: block;
+    height: 50px;
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 320px;
+    background-color: #5C1677;
+    border: none;
+    border-radius: 35px;
+    font-family: 'Inria Serif', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#login-form .login-btn:hover {
+    background-color: #3d3343;
+}
+
+/* ═══════════════════════════════════════
+   SIGNUP FORM
+═══════════════════════════════════════ */
+#signup-form {
+    display: none;
+}
+
+/* ─── Signup Labels ─── */
+#signup-form #fullname-lable {
+    position: absolute;
+    top: 90px;
+    left: 70px;
+    width: 204px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: black;
+    background-color: rgba(92, 22, 119, 0.6);
+    padding: 4px 8px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+#signup-form #NewUsername-lable {
+    position: absolute;
+    top: 140px;
+    left: 70px;
+    width: 204px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: black;
+    background-color: rgba(92, 22, 119, 0.6);
+    padding: 6px 12px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+#signup-form #email-lable {
+    position: absolute;
+    top: 190px;
+    left: 70px;
+    width: 204px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: black;
+    background-color: rgba(92, 22, 119, 0.6);
+    padding: 6px 12px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+#signup-form #newpassword-lable {
+    position: absolute;
+    top: 90px;
+    left: 520px;
+    width: 204px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: black;
+    background-color: rgba(92, 22, 119, 0.6);
+    padding: 6px 12px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+#signup-form #confirm-password-lable {
+    position: absolute;
+    top: 190px;
+    left: 520px;
+    width: 204px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: black;
+    background-color: rgba(92, 22, 119, 0.6);
+    padding: 6px 12px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* ─── Signup Inputs ─── */
+#signup-form #fullname {
+    display: block;
+    width: 200px;
+    margin-top: 92px;
+    margin-left: 280px;
+    padding: 7px 15px;
+    font-size: 16px;
+    font-family: 'Inria Sans', sans-serif;
+    border: 2px solid #5c1677;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#signup-form #Newusername {
+    display: block;
+    width: 200px;
+    margin-top: 13px;
+    margin-left: 280px;
+    padding: 7px 15px;
+    font-size: 16px;
+    font-family: 'Inria Sans', sans-serif;
+    border: 2px solid #5c1677;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#signup-form #email {
+    display: block;
+    width: 200px;
+    margin-top: 13px;
+    margin-left: 280px;
+    padding: 7px 15px;
+    font-size: 16px;
+    font-family: 'Inria Sans', sans-serif;
+    border: 2px solid #5c1677;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#signup-form #newpassword {
+    display: block;
+    width: 200px;
+    margin-top: -88px;
+    margin-left: 520px;
+    padding: 7px 15px;
+    font-size: 16px;
+    font-family: 'Inria Sans', sans-serif;
+    border: 2px solid #5c1677;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#signup-form #confirm-password {
+    display: block;
+    width: 200px;
+    margin-top: 63px;
+    margin-left: 520px;
+    padding: 7px 15px;
+    font-size: 16px;
+    font-family: 'Inria Sans', sans-serif;
+    border: 2px solid #5c1677;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* ─── Signup Submit Button ─── */
+#signup-form .signup-btn {
+    display: block;
+    height: 50px;
+    width: 150px;
+    margin-top: -35px;
+    margin-left: 330px;
+    background-color: #5C1677;
+    border: none;
+    border-radius: 35px;
+    font-family: 'Inria Serif', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#signup-form .signup-btn:hover {
+    background-color: #322f34;
+}
+
+/* ═══════════════════════════════════
+   Responsive - Zoom to fit any screen
+═══════════════════════════════════ */
+@media (max-width: 900px) {
+    .Page_Title {
+        position: static;
+        transform: none;
+        width: 90%;
+        margin: 20px auto 0;
+        display: block;
+        text-align: center;
+    }
+
+    .form_Container {
+        position: static;
+        left: auto;
+        transform: none;
+        width: 800px;
+        margin: 20px auto;
+        zoom: 0.85;
+    }
+}
+
+@media (max-width: 700px) {
+    .form_Container { zoom: 0.65; }
+}
+
+@media (max-width: 550px) {
+    .form_Container { zoom: 0.50; }
+}
+
+@media (max-width: 420px) {
+    .form_Container { zoom: 0.38; }
+}
+
+@media (max-width: 900px) {
+    .Page_Title {
+        position: static;
+        transform: none;
+        width: 90%;
+        margin: 20px auto 0;
+        display: block;
+        text-align: center;
+        zoom: 0.85;                /* ← add this */
+    }
+
+    .form_Container {
+        position: static;
+        left: auto;
+        transform: none;
+        width: 800px;
+        margin: 20px auto;
+        zoom: 0.85;
+    }
+}
+
+@media (max-width: 700px) {
+    .Page_Title { zoom: 0.65; }   /* ← add this */
+    .form_Container { zoom: 0.65; }
+}
+
+@media (max-width: 550px) {
+    .Page_Title { zoom: 0.50; }   /* ← add this */
+    .form_Container { zoom: 0.50; }
+}
+
+@media (max-width: 420px) {
+    .Page_Title { zoom: 0.38; }   /* ← add this */
+    .form_Container { zoom: 0.38; }
+}

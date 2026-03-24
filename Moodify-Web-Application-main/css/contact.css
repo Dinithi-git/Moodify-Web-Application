@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f0e6f6, #ffffff);
+    margin: 0;
+}
+
+
+/* Form Container */
+.contact-container {
+    width: 90%;
+    max-width: 400px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.contact-container h1 {
+    margin-bottom: 15px;
+}
+
+/* Inputs */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #5C1677;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #3e0f55;
+}
+
+/* Status Message */
+.status {
+    color: green;
+    font-weight: bold;
+}
