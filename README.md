@@ -128,7 +128,7 @@ Moodify-Web-Application/
 ├── calm.html
 ├── tension.html
 │
-├── 127_0_0_1.sql
+├── moodify_db.sql
 
 ```
 
@@ -165,7 +165,7 @@ Moodify-Web-Application/
 ```
 6. Import:
    - Click **Import**
-   - Select ` 127_0_0_1.sql`
+   - Select ` moodify_db.sql`
    - Click **Go**
 7. Run project:
 ```
@@ -191,7 +191,7 @@ Moodify-Web-Application/
 ```
    moodify_db
 ```
-6. Import  '127_0_0_1.sql`
+6. Import  'moodify_db.sql`
 7. Run project:
 ```
    http://localhost/Moodify-Web-Application-main/
